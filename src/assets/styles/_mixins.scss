@@ -1,0 +1,75 @@
+@mixin flex($flex_type: flex, $flex_align: false, $flex_justify: false) {
+    display: $flex_type;
+
+    @if $flex_align {
+        align-items: $flex_align;
+    }
+
+    @if $flex_justify {
+        justify-content: $flex_justify;
+    }
+}
+
+@keyframes reveal{
+    from{
+      opacity: 0;
+    }
+    to{
+      opacity: 1;
+    }
+}
+
+@keyframes revealButton{
+    from{
+        bottom: -400px;
+    }
+    to{
+        bottom: 0;
+    }
+}
+
+@keyframes tilt-shaking {
+    0% { transform: rotate(0); }
+    5% { transform: rotate(10deg); }
+    15% { transform: rotate(-10deg); }
+    25% { transform: rotate(10deg); }
+    35% { transform: rotate(-10deg); }
+    45% { transform: rotate(10deg); }
+    55% { transform: rotate(-10deg); }
+    65% { transform: rotate(10deg); }
+    75% { transform: rotate(-10deg); }
+    80% { transform: rotate(0); }
+}
+
+$breakpoint-desktop: 1250px;
+$breakpoint-tablet: 768px;
+$breakpoint-mobile-xl: 1000px;
+$breakpoint-mobile: $breakpoint-tablet - 0.02px;
+$breakpoint-mobile-xs: 375px;
+
+
+@mixin media($point) {
+    @if $point == tablet {
+        @media all and (max-width: $breakpoint-desktop) {
+            @content;
+        }
+    }
+
+    @if $point == mobile-xl {
+        @media all and (max-width: $breakpoint-mobile-xl) {
+            @content;
+        }
+    }
+
+    @if $point == mobile {
+        @media all and (max-width: $breakpoint-mobile) {
+            @content;
+        }
+    }
+
+    @if $point == mobile-xs {
+        @media all and (max-width: $breakpoint-mobile-xs) {
+            @content;
+        }
+    }
+}

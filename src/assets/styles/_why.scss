@@ -1,0 +1,169 @@
+.why {
+    &__wrapper{
+        @include flex(flex, center, center);
+
+        width: 100%;
+        padding-bottom: 100px;
+
+        h3.title {
+            display: none;
+        }
+
+        @include media(tablet) {
+            padding-bottom: 80px;
+        }
+
+        @include media(mobile) {
+            flex-direction: column;
+            gap: 80px;
+            padding-bottom: 60px;
+
+            h3.title {
+                display: block;
+                text-align: center;
+                font-weight: 700;
+            }
+        }
+    }
+
+    &.container {
+        @include flex(flex, start, center);
+
+        @include media(mobile) {
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+        }
+    }
+
+    &-image {
+        @include flex(flex, center, center);
+
+        @include media(mobile) {
+            width: 100%;
+        }
+
+        &-desktop {
+            @include media(tablet) {
+                display: none;
+            }
+        }
+
+        &-tablet {
+            display: none;
+
+            @include media(tablet) {
+                display: block;
+                width: 582px;
+                height: 443px;
+            }
+
+            @include media(mobile) {
+                display: none;
+            }
+        }
+
+        &-mobile {
+            display: none;
+
+            @include media(mobile) {
+                display: block;
+                width: 100%;
+                max-width: 343px;
+                height: auto;
+            }
+        }
+    }
+
+    &-info {
+        @include flex(flex, start, start);
+
+        flex-direction: column;
+        gap: 30px;
+        padding: 40px 34px 43px;
+        width: 610px;
+        height: 412px;
+        margin-left: -231px;
+        margin-top: 104px;
+        border-radius: 16px;
+        border-bottom: 3px solid map-get($colors, c-before-border);
+        background: map-get($colors, c-white);
+        box-shadow: 0 4px 19px 0 rgba(0, 0, 0, 0.10);
+
+        @include media(tablet) {
+            width: 538px;
+            height: 388px;
+            margin-top: 100px;
+            margin-left: -176px;
+            padding: 41px 41px 40px 40px;
+        }
+
+        @include media(mobile-xl) {
+            height: auto;
+        }
+
+        @include media(mobile) {
+            width: 100%;
+            max-width: 343px;
+            margin-left: 0;
+            margin-top: 0;
+            border-radius: 16px;
+            box-shadow: -4px 4px 6px 0 rgba(3, 45, 101, 0.12);
+            padding: 0 7px 40px 19px;
+        }
+        
+        .title {
+            font-size: 36px;
+            letter-spacing: -1.08px;
+
+            @media (max-width: 1300px) {
+                font-size: 28px;
+                letter-spacing: -0.84px;
+            }
+
+            @include media(mobile) {
+                display: none;
+            }
+        }
+    }
+
+    &-list {
+        @include flex(flex, start, start);
+
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    &-item {
+        @include flex (flex, center, start);
+
+        gap: 8px;
+    }
+
+    &-ico {
+        @include flex (flex, center, center);
+
+        svg {
+            width: 24px;
+            height: 24px;
+        }
+    }
+
+    &-text {
+        color: map-get($colors, c-text-black);
+        font-size: 20px;
+        font-weight: 400;
+
+        br {
+            display: none;
+        }
+
+        @include media(mobile) {
+            font-size: 18px;
+
+            br {
+                display: block;
+            }
+        }
+    }
+}

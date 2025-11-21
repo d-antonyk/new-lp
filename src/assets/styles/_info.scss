@@ -1,0 +1,43 @@
+.info-tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+
+  .info-icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .tooltip-box {
+    @include flex(flex, start, start);
+
+    flex-direction: column;
+    gap: 5px;
+    position: absolute;
+    top: -120px;
+    left: 50%;
+    transform: translate(-50%, -12px);
+    border-radius: 12.511px;
+    background: map-get($colors, c-white);
+    box-shadow: 0 18.767px 31.279px 0 rgba(0, 0, 0, 0.06);
+    z-index: 10;
+    padding: 24px 16px;
+
+    @include media(mobile) {
+        left: 60px;
+    }
+  }
+
+  .tooltip-title {
+    color: map-get($colors, c-text-grey);
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  .tooltip-text {
+    color: map-get($colors, c-h1);
+    font-size: 14px;
+    font-weight: 500;
+    width: 234px;
+  }
+}

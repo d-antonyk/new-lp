@@ -1,0 +1,52 @@
+.header {
+    &__wrapper {
+        top: 0;
+        z-index: 2;
+        width: 100%;
+        position: fixed;
+        height: 112px;
+        width: 100%;
+        padding: 32px 0;
+        background: map-get($colors, c-white);
+
+        @include media(mobile) {
+            height: 123px;
+            padding: 0;
+        }
+    }
+
+    &.container {
+        @include flex(flex, center, space-between);
+        
+        width: 100%;
+
+        @include media(mobile) {
+            flex-direction: column-reverse;
+            justify-content: center;
+            padding: 0;
+        }
+    }
+
+    &__logo {
+        display: flex;
+
+        @include media(mobile) {
+            margin-top: 21px;
+            margin-bottom: 20px;
+        }
+    }
+
+    hr {
+        display: none;
+
+        @include media(mobile) {
+            display: block;
+            border: none;
+            border-top: 1px solid map-get($colors, c-border);
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            margin-top: 2px;
+        }
+    }
+}

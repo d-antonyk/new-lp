@@ -1,0 +1,123 @@
+.fixed-button {
+    @include flex(flex, center, center);
+
+    gap: 16px;
+    bottom: 0;
+    z-index: 99;
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    font-size: 24px;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: map-get($colors, c-white);
+    animation: revealButton .5s ease-in-out;
+    background: map-get($colors, c-border);
+
+    @include media(mobile) {
+        font-size: 18px;
+        text-align: center;
+    }
+    
+    &-ico {
+        animation: tilt-shaking 1s infinite;
+        width: 24px;
+        height: 24px;
+
+        svg {
+            width: 24px;
+            height: 24px;
+        }
+    }
+
+    &.show-mobile {
+        display: none;
+        
+        @include media(mobile) {
+            display: flex;
+        }
+    }
+
+    .hide-mobile {
+        @include media(mobile) {
+            display: none;
+        }
+    }
+}
+
+.button {
+    &-header {
+        @include flex(flex, center, center);
+
+        width: 239px;
+        min-width: 239px;
+        height: 48px;
+        gap: 8px;
+        border-radius: 10px;
+        border: 1px solid map-get($colors, c-border);
+        background: map-get($colors, c-white);
+        cursor: pointer;
+
+        .button-title {
+            color: map-get($colors, c-border);
+            font-weight: 700;
+        }
+
+        &:hover {
+            background: map-get($colors, c-border);
+            
+            .button-title {
+                color: map-get($colors, c-white);
+            }
+
+            .button-ico {
+                path {
+                    fill: map-get($colors, c-white);
+                }
+            }
+        }
+
+        @include media(mobile) {
+            border: none;
+        }
+    }
+
+    &-form {
+        @include flex(flex, center, center);
+
+        border-radius: 10px;
+        background: map-get($colors, c-border);
+        border: 1px solid transparent;
+        box-shadow: 0 30px 60px 0 rgba(253, 123, 39, 0.25);
+        cursor: pointer;
+        width: 339px;
+        min-width: 339px;
+        height: 72px;
+
+        .button-title {
+            color: map-get($colors, c-white);
+            font-size: 16px;
+            font-weight: 700;
+        }
+
+        &:hover {
+            border: 1px solid map-get($colors, c-border);
+            background: map-get($colors, c-white);
+
+            .button-title {
+                color: map-get($colors, c-border);
+            }
+        }
+
+        @include media(mobile-xs) {
+            width: 100%;
+            min-width: 100%;
+        }
+    }
+
+    &-ico {
+        width: 24px;
+        height: 24px;
+    }
+}

@@ -1,0 +1,240 @@
+.articles {
+    &__wrapper {
+        @include flex(flex, center, center);
+
+        width: 100%;
+        padding: 100px 0;
+
+        @include media(tablet) {
+            padding: 80px 0;
+        }
+
+        @include media(mobile) {
+            padding-top: 0;
+            padding-bottom: 60px;
+        }
+    }
+
+    &.container {
+        @include flex(flex, center, center);
+
+        flex-direction: column;
+        gap: 100px;
+
+        @include media(tablet) {
+            gap: 80px;
+        }
+
+        @include media(mobile) {
+            gap: 60px;
+        }
+    }
+
+    &__item {
+        @include flex(flex, center, space-between);
+
+        width: 100%;
+
+        &.reverse {
+            .articles-item {
+                &:nth-child(2) {
+                    .articles-text {
+                        max-width: 330px;
+                    }
+                }
+            }
+
+            .articles-list {
+                margin-top: 20px;
+            }
+
+            .articles-item {
+                display: block;
+                max-width: 491px;
+
+                @include media(mobile) {
+                    display: flex;
+                    flex-direction: column;
+                    max-width: 323px;
+                }
+            }
+
+            .articles-dash {
+                display: inline-block;
+                margin: 0 4px;
+
+                @include media(mobile) {
+                    display: none;
+                }
+            }
+        }
+        
+        @media (max-width: 1300px) {
+            &:first-child {
+                .articles-item {
+                    flex-direction: column;
+                }
+            }
+        }
+
+        @include media(mobile-xl) {
+            gap: 10px;
+        }
+
+        @include media(mobile) {
+            justify-content: center;
+        }
+    }
+
+    &-image {
+        display: flex;
+        width: 547px;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        &-desktop {
+            @include media(tablet) {
+                display: none;
+            }
+        }
+
+        &-tablet {
+            display: none;
+
+            @include media(tablet) {
+                display: flex;
+            }
+        }
+
+        @include media(tablet) {
+            width: 385px;
+        }
+
+        @include media(mobile) {
+            display: none;
+        }
+    }
+
+    &-mobile {
+        display: none;
+        
+        @include media(mobile) {
+            @include flex(flex, center, center);
+
+            width: 100%;
+            max-width: 343px;
+            margin-top: 40px;
+            margin-left: -10px;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+
+    &-info {
+        @include flex(flex, start, start);
+
+        flex-direction: column;
+
+        .title {
+            line-height: 100%;
+
+            br {
+                display: none;
+
+                @include media(mobile) {
+                    display: block;
+                }
+            }
+
+            @include media(mobile) {
+                max-width: 317px;
+                text-align: center;
+                line-height: 130%;  
+            }
+        }
+
+        @include media(mobile) {
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    &-subtitle {
+        color: map-get($colors, c-border);
+        font-size: 22px;
+        font-style: italic;
+        font-weight: 700;
+        line-height: 150%;
+        margin-top: 15px;
+
+        @include media(mobile-xl) {
+            br {
+                display: none;
+            }
+        }
+
+        @include media(mobile) {
+            text-align: center;
+            font-size: 18px;
+            max-width: 270px;
+            margin-top: 12px;   
+        }
+    }
+
+    &-list {
+        @include flex(flex, start, start);
+
+        flex-direction: column;
+        gap: 16px;
+        margin-top: 40px;
+
+        @include media(mobile) {
+            margin-top: 20px;
+        }
+    }
+
+    &-item {
+        @include flex(flex, start, start);
+
+        gap: 5px;
+        width: 100%;
+
+        @include media(tablet) {
+            flex-direction: column;
+        }
+
+        @include media(mobile) {
+            max-width: 323px;
+        }
+    }
+
+    &-text, 
+    &-dash {
+        color: map-get($colors, c-text-black);
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 150%;
+
+        &-strong {
+            font-size: 22px;
+            font-weight: 700;
+            color: #001B48;
+
+            @include media(mobile) {
+                font-size: 18px;
+            }
+        }
+    }
+
+    &-dash {
+        @media (max-width: 1300px) {
+            display: none;
+        }
+    }
+}

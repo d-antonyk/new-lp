@@ -1,0 +1,146 @@
+@import "~slick-carousel/slick/slick.css"; 
+@import "~slick-carousel/slick/slick-theme.css";
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 16px;
+    font-style: normal;
+    line-height: normal;
+}
+
+.container {
+    margin: auto;
+    max-width: 1320px;
+    width: 100%;
+
+    @media (max-width: 1350px) {
+        padding: 0 40px;
+    }
+
+    @include media(tablet) {
+        padding: 0 40px;
+    }
+
+    @include media(mobile) {
+        padding: 0 16px;
+    }
+}
+
+.main {
+    padding-top: 112px;
+    padding-bottom: 80px;
+
+    @include media(mobile) {
+        padding-top: 123px;
+    }
+}
+
+.anchor {
+    top: -112px;
+    position: absolute;
+
+    @include media(mobile) {
+        top: -103px;
+    }
+}
+
+.title {
+    color: map-get($colors, c-h1);
+    font-feature-settings: 'liga' off;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%;
+    letter-spacing: -1.68px;
+
+    @media (max-width: 1300px) {
+        font-size: 40px;
+        letter-spacing: -1.2px;
+    }
+
+    @include media(mobile) {
+        font-size: 32px;
+        letter-spacing: -0.96px;
+    }
+}
+
+.colored {
+    color: map-get($colors, c-border);
+    font-feature-settings: 'liga' off;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%;
+    letter-spacing: -1.68px;
+    text-transform: capitalize;
+
+    @media (max-width: 1300px) {
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 130%;
+        letter-spacing: -1.2px;
+    }
+
+    @include media(mobile) {
+        font-size: 32px;
+        letter-spacing: -0.96px;
+    }
+}
+
+.privacy__wrapper {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 20px;
+
+    .title {
+        font-size: 36px;
+        font-weight: bold;
+        text-align: center;
+    }
+}
+
+.hidden-phone {
+    opacity: 0;
+    pointer-events: none;
+    font-size: 0;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+}
+
+h1, h2, h3, h4, h5, p, a {
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+
+button,
+input {
+    outline: none;
+    border: none;
+}
+
+/*=========SLIDER=========*/
+.slick-slider {
+    width: 100%;
+    max-width: 1400px;
+}
+
+.slick-slide {
+    padding: 0 50px;
+
+    @include media(tablet) {
+        padding: 0;
+    }
+}

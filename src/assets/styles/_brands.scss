@@ -1,0 +1,141 @@
+.brands {
+    &__wrapper {
+        @include flex(flex, center, center);
+
+        flex-direction: column;
+        width: 100%;
+        gap: 52px;
+        padding: 45px 0 73px;
+        background: map-get($colors, bg-brands);
+
+        @include media(mobile) {
+            padding: 40px 16px;
+            gap: 24px;
+        }
+    }
+
+    &-slider {
+        width: 100%;
+        overflow: hidden;
+
+        @include media(mobile) {
+            display: none;
+        }
+    }
+
+    &-title {
+        color: map-get($colors, c-main);
+        text-align: center;
+        font-size: 24px;
+        font-weight: 600;
+        letter-spacing: 0.2px;
+    }
+
+    &-track {
+        @include flex(flex, end, center);
+
+        width: max-content;
+        animation: scroll linear infinite;
+        flex-wrap: nowrap;
+    }
+
+    &-item {
+        display: flex;
+        padding: 0 60px;
+        align-items: center;
+        flex-shrink: 0;
+
+        @include media(mobile) {
+            padding: 0;
+
+            img {
+                height: auto;
+                width: auto;
+                display: block;
+            }
+        }
+    }
+
+    &-mobile {
+        display: none;
+
+        @include media(mobile) {
+            @include flex(flex, center, center);
+
+            flex-direction: column;
+            gap: 24px;
+        }
+    }
+
+    &-list {
+        @include flex(flex, center, center);
+
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 24px;
+    }
+
+    &-logo {
+        &-0 {
+            width: 144px;
+            height: 24px;
+        }
+
+        &-1 {
+            width: 77px;
+            height: 24px;
+        }
+
+        &-2 {
+            width: 120px;
+            height: 24px;
+        }
+
+        &-3 {
+            width: 111px;
+            height: 24px;
+        }
+
+        &-4 {
+            width: 69px;
+            height: 24px;
+        }
+
+        &-5 {
+            width: 115px;
+            height: 24px;
+        }
+
+        &-6 {
+            width: 97px;
+            height: 24px;
+        }
+
+        &-7 {
+            width: 45px;
+            height: 24px;
+        }
+
+        &-8 {
+            width: 64px;
+            height: 24px;
+        }
+    }
+
+    &-text {
+        color: map-get($colors, c-text-grey);
+        text-align: center;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 160%;
+    }
+
+    @keyframes scroll {
+        from {
+          transform: translateX(0%);
+        }
+        to {
+          transform: translateX(-50%);
+        }
+    }
+}

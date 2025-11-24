@@ -9,10 +9,10 @@ export const Before = () => {
         <section className="before__wrapper">
             <h2 className="title">
                 <span>  
-                    Fewer calls. Fewer jobs.
+                    Fewer calls. Fewer roof jobs.
                 </span>
                 <span>
-                    Competitors showing up on Google — <span className="colored">not me</span>
+                    Competitors showing up on Google — <span className="colored">not you</span>
                 </span>
             </h2>
             <div className="before container">
@@ -23,19 +23,19 @@ export const Before = () => {
                         </div>
                         <div className="before-list">
                             <div className="before-list-item">
-                                You're not showing up on Google or Maps
+                                Homeowners can’t find you for roof repairs or on Maps
                             </div>
                             <div className="before-list-item">
-                                Word of mouth has dried up
+                                Storm chasers swooped in after storm season
                             </div>
                             <div className="before-list-item">
-                                You’ve wasted money on ads that didn’t work
+                                You’ve wasted money on ads that didn’t bring roof inspections
                             </div>
                             <div className="before-list-item">
-                                You’re tired of DIY marketing that doesn’t deliver
+                                People don’t know who to trust for roofing in your area
                             </div>
                             <div className="before-list-item">
-                                You're overwhelmed and don’t have time to figure it out
+                                You’re juggling crews and insurance work with no time for marketing
                             </div>
                         </div>
                     </div>
@@ -51,19 +51,19 @@ export const Before = () => {
                         </div>
                         <div className="before-list">
                             <div className="before-list-item">
-                                You show up first when people search for local services
+                                You show up first when people search for roof replacements or repairs
                             </div>
                             <div className="before-list-item">
-                                Your phone rings with real, qualified leads
+                                Your phone rings with storm, leak, and replacement requests
                             </div>
                             <div className="before-list-item">
-                                You have a clean online presence that builds trust
+                                Homeowners see proof you’re the trusted local roofer
                             </div>
                             <div className="before-list-item">
-                                You can track ROI with zero guesswork
+                                You can track ROI and know which roofs came from which ads
                             </div>
                             <div className="before-list-item">
-                                You focus on what you do best—we handle the rest
+                                You focus on installs and claims—we handle the marketing
                             </div>
                         </div>
                     </div>
@@ -72,7 +72,6 @@ export const Before = () => {
         </section>
     );
 };
-
 
 
 

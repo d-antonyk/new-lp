@@ -23,7 +23,7 @@ const IndexPage: React.FC = () => {
 
   return (
     <>
-      <SEO title={`Digital Marketing Agency West Palm Beach | TopPosition.com LLC`} />
+      <SEO title={`Roofing Marketing Agency West Palm Beach | TopPosition.com LLC`} />
       <DefaultLayout phoneNumber={phoneNumber} phoneNumberLink={phoneNumberLink}>
         <FixedButton phoneNumber={phoneNumber} phoneNumberLink={phoneNumberLink} />
         <Banner />

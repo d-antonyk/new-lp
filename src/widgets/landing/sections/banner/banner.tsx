@@ -15,14 +15,14 @@ export const Banner = () => {
             <div className="banner container">
                 <div className="banner-info">
                     <h1 className="banner-title">
-                        <span>Your Local <br /> Repair Business <br /> Deserves More Calls.</span>
-                        <span>Let's Make It Happen</span>
+                        <span>Your Local <br /> Roofing Business <br /> Deserves More Calls.</span>
+                        <span>Let's Make It Happen.</span>
                     </h1>
                     <span className="banner-subtitle">
                         No fluff. Just leads, results, and your phone ringing again.
                     </span>
                     <p className="banner-text">
-                        We help local business owners fix their biggest issue—
+                        We help roofing contractors fix their biggest issue—
                         getting found and getting hired.
                     </p>
                     <div className="banner-button">
@@ -37,7 +37,7 @@ export const Banner = () => {
                         <Image src={Clients} width={176} height={56} alt='reviews'/>
                         <div className="banner-reviews-col">
                             <div className="banner-reviews-colored">
-                                +135  Local Business Owners  
+                                +135  Roofing Contractors  
                             </div>
                             <div className="banner-reviews-text">
                                 Already Trust Us
@@ -46,9 +46,9 @@ export const Banner = () => {
                     </div>
                 </div>
                 <div className="banner-image">
-                <Image src={BannerImg} width={667} height={462} alt='hvac' className='banner-img-desktop' />
-                <Image src={BannerTabletImg} width={433} height={394} alt='hvac' className='banner-img-tablet' />
-                <Image src={BannerMobileImg} width={355} height={324} alt='hvac' className='banner-img-mobile' />
+                <Image src={BannerImg} width={667} height={462} alt='roofing' className='banner-img-desktop' />
+                <Image src={BannerTabletImg} width={433} height={394} alt='roofing' className='banner-img-tablet' />
+                <Image src={BannerMobileImg} width={355} height={324} alt='roofing' className='banner-img-mobile' />
             </div>
             </div>
         </section>

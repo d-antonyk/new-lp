@@ -10,7 +10,7 @@ import Check from '@/assets/images/icons/check.svg';
 export const Why = () => {
     return (
         <section className="why__wrapper">
-            <h3 className="title">Why Local Businesses<br /> 
+            <h3 className="title">Why Roofing Companies<br /> 
                 Choose Us</h3>
             <div className="why container">
                 <div className="why-image">
@@ -20,7 +20,7 @@ export const Why = () => {
                 </div>
                 <div className="why-info">
                     <h2 className="title">
-                        Why Local Businesses <br /> 
+                        Why Roofing Companies <br /> 
                         Choose Us
                     </h2>
                     <div className="why-list">
@@ -29,7 +29,7 @@ export const Why = () => {
                                 <Check />
                             </div>
                             <div className="why-text">
-                                5+ experience with local businesses only
+                                5+ years scaling local roofers only
                             </div>
                         </div>
 
@@ -56,7 +56,7 @@ export const Why = () => {
                                 <Check />
                             </div>
                             <div className="why-text">
-                                Fast launch: live in under 7 days
+                                Fast launch: storm-season ready in under 7 days
                             </div>
                         </div>
 

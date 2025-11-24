@@ -74,7 +74,7 @@ export const Reviews = () => {
     return (
         <section className="reviews__wrapper">
             <h2 className="title">
-                See Our Successful Digital Marketing Clients
+                See Our Successful Roofing Clients
             </h2>
             <div className="reviews container">
                 <div className="reviews-slider">
@@ -86,10 +86,10 @@ export const Reviews = () => {
                         <div className="reviews-mobile">
                             <div className="reviews-mobile-info">
                                 <div className="reviews-title">
-                                    Roku Air And Heating
+                                    StormGuard Roofing & Restoration
                                 </div>
                                 <div className="reviews-date">
-                                    PPC marketing results <br /> (01.01.2024-01.01.2025)
+                                    Roofing PPC results <br /> (Storm Season 2024-2025)
                                 </div>
                             </div>
                             <div className="reviews-icon">
@@ -115,16 +115,16 @@ export const Reviews = () => {
                                     </div>
                                 </div>
                                 <div className="reviews-client-text">
-                                    “They tracked every lead. I knew what I was getting—and I got my money’s worth.”
+                                    “They tracked every roof lead. I knew what I was getting—and I got my money’s worth.”
                                 </div>
                             </div>
                         </div>
                         <div className="reviews__info">
                             <div className="reviews-title">
-                                Roku Air And Heating
+                                StormGuard Roofing & Restoration
                             </div>
                             <div className="reviews-date">
-                                PPC marketing results (01.01.2024-01.01.2025)
+                                Roofing PPC results (Storm Season 2024-2025)
                             </div>
                             <div className="reviews-stat">
                                 <div className="reviews-item">
@@ -147,22 +147,22 @@ export const Reviews = () => {
                                         </div>
                                     </div>
                                     <div className="reviews-item-result">
-                                        <div className="reviews-item-info">
-                                            <div className="reviews-item-elem">
+                                            <div className="reviews-item-info">
+                                                <div className="reviews-item-elem">
                                                 Leads
-                                            </div>
-                                            <div className="reviews-item-stat">
+                                                </div>
+                                                <div className="reviews-item-stat">
                                                 1058
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div className="reviews-item-info">
-                                            <div className="reviews-item-elem">
-                                                Jobs
-                                            </div>
-                                            <div className="reviews-item-stat">
+                                            <div className="reviews-item-info">
+                                                <div className="reviews-item-elem">
+                                                Roof jobs
+                                                </div>
+                                                <div className="reviews-item-stat">
                                                 374
+                                                </div>
                                             </div>
-                                        </div>
                                         <div className="reviews-item-info">
                                             <div className="reviews-item-elem">
                                                 Cost per Lead
@@ -212,7 +212,7 @@ export const Reviews = () => {
                                         </div>
                                         <div className="reviews-item-info">
                                             <div className="reviews-item-elem">
-                                                Jobs
+                                                Roof jobs
                                             </div>
                                             <div className="reviews-item-stat">
                                                 167
@@ -247,10 +247,10 @@ export const Reviews = () => {
                         <div className="reviews-mobile">
                             <div className="reviews-mobile-info">
                                 <div className="reviews-title">
-                                    California Garage Repair (CGR)
+                                    Prairie Peak Roofing
                                 </div>
                                 <div className="reviews-date">
-                                    PPC marketing results <br /> (01.01.2024-31.07.2024)
+                                    Roofing PPC results <br /> (01.01.2024-31.07.2024)
                                 </div>
                             </div>
                             <div className="reviews-icon">
@@ -276,17 +276,17 @@ export const Reviews = () => {
                                     </div>
                                 </div>
                                 <div className="reviews-client-text">
-                                    “I didn’t believe in digital marketing until TopPosition brought us results I could 
+                                    “I didn’t believe in digital marketing until TopPosition brought roofing results I could 
                                     see and measure.”
                                 </div>
                             </div>
                         </div>
                         <div className="reviews__info">
                             <div className="reviews-title">
-                                California Garage Repair (CGR)
+                                Prairie Peak Roofing
                             </div>
                             <div className="reviews-date">
-                                PPC marketing results (01.01.2024-31.07.2024)
+                                Roofing PPC results (01.01.2024-31.07.2024)
                             </div>
                             <div className="reviews-stat">
                                 <div className="reviews-item">
@@ -300,7 +300,7 @@ export const Reviews = () => {
                                             </div>
                                             <div className="reviews-item-graph">
                                                 <div className="reviews-item-sum">
-                                                    $488,422.39
+                                                    $488k+
                                                 </div>
                                                 <div className="reviews-item-stroke">
                                                     <StrokeOrange />
@@ -314,7 +314,7 @@ export const Reviews = () => {
                                                 Qualified leads
                                             </div>
                                             <div className="reviews-item-stat">
-                                                7387
+                                                738
                                             </div>
                                         </div>
                                         <div className="reviews-item-info fit-content">
@@ -339,7 +339,7 @@ export const Reviews = () => {
                                             </div>
                                             <div className="reviews-item-graph">
                                                 <div className="reviews-item-sum">
-                                                    $245,398.90
+                                                    $245k+
                                                 </div>
                                                 <div className="reviews-item-stroke">
                                                     <StrokeBlue />
@@ -353,7 +353,7 @@ export const Reviews = () => {
                                                 Qualified leads
                                             </div>
                                             <div className="reviews-item-stat">
-                                                993
+                                                190
                                             </div>
                                         </div>
                                         <div className="reviews-item-info fit-content">
@@ -377,10 +377,10 @@ export const Reviews = () => {
                         <div className="reviews-mobile">
                             <div className="reviews-mobile-info">
                                 <div className="reviews-title">
-                                    Bixi Appliance Repair
+                                    Summit Roofing & Exteriors
                                 </div>
                                 <div className="reviews-date">
-                                    PPC marketing results <br /> (01.01.2024-31.07.2024)
+                                    Roofing PPC results <br /> (01.01.2024-31.07.2024)
                                 </div>
                             </div>
                             <div className="reviews-icon">
@@ -406,16 +406,16 @@ export const Reviews = () => {
                                     </div>
                                 </div>
                                 <div className="reviews-client-text">
-                                    “We went from zero calls to fully booked within 6 weeks. Best decision we made.”
+                                    “We went from zero roof calls to fully booked within 6 weeks. Best decision we made.”
                                 </div>
                             </div>
                         </div>
                         <div className="reviews__info">
                             <div className="reviews-title">
-                                Bixi Appliance Repair
+                                Summit Roofing & Exteriors
                             </div>
                             <div className="reviews-date">
-                                PPC marketing results (01.01.2024-31.07.2024)
+                                Roofing PPC results (01.01.2024-31.07.2024)
                             </div>
                             <div className="reviews-stat">
                                 <div className="reviews-item bixi">
@@ -425,7 +425,7 @@ export const Reviews = () => {
                                         </div>
                                         <div className="reviews-item-col">
                                             <div className="reviews-item-name">
-                                                Closed deals
+                                                Roof projects closed
                                             </div>
                                             <div className="reviews-item-graph">
                                                 <div className="reviews-item-sum">
@@ -470,7 +470,7 @@ export const Reviews = () => {
                                         </div>
                                         <div className="reviews-item-col">
                                             <div className="reviews-item-name">
-                                                Closed deals
+                                                Roof projects closed
                                             </div>
                                             <div className="reviews-item-graph">
                                                 <div className="reviews-item-sum">

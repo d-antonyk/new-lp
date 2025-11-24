@@ -15,11 +15,11 @@ export const Articles = () => {
                 <div className="articles__item">
                     <div className="articles-info">
                         <h2 className="title">
-                            We stand <br /> behind our service
+                            We stand <br /> behind our roofing service
                         </h2>
                         <div className="articles-subtitle">
                             We won’t promise the moon. We will show <br /> 
-                            you exactly what’s working
+                            you exactly what’s working for roofers
                         </div>
                         <div className="articles-mobile">
                             <Image src={Image1Mobile} width={355} height={243} alt='article-2' />
@@ -79,7 +79,7 @@ export const Articles = () => {
                                 </span>
                                 <span className="articles-dash">-</span>
                                 <span className="articles-text">
-                                    We discuss your goals and issues
+                                    We discuss your roofing goals and issues
                                 </span>
                             </div>
                             <div className="articles-item">
@@ -89,7 +89,7 @@ export const Articles = () => {
                                 <span className="articles-dash">-</span>
                                 <span className="articles-text">
                                     Local SEO, Ads, Review Boosting—      
-                                    tailored for your business
+                                    tailored for your roofing company
                                 </span>
                             </div>
                             <div className="articles-item">
@@ -98,7 +98,7 @@ export const Articles = () => {
                                 </span>
                                 <span className="articles-dash">-</span>
                                 <span className="articles-text">
-                                    Campaigns live within a few days
+                                    Campaigns live within a few days—fast enough for storm season
                                 </span>
                             </div>
                             <div className="articles-item">
@@ -107,7 +107,7 @@ export const Articles = () => {
                                 </span>
                                 <span className="articles-dash">-</span>
                                 <span className="articles-text">
-                                    Calls, leads, and a growing customer base
+                                    Roof inspections, leads, and a growing customer base
                                 </span>
                             </div>
                         </div>

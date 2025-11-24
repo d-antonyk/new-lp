@@ -23,10 +23,10 @@ export const Footer: React.FC<FooterProps> = ({ phoneNumber, phoneNumberLink }) 
               <Image src={Logo} width={172} height={36} alt='logo' />
             </a>
             <div className="footer-text">
-              Our team knows what is business. Either it is small or medium size. Our passion is always find creative ways to cut the cost and expand your profits by using the latest digital tools and having intelligent people working on your project.
+              Our team knows roofing businesses. Whether you’re a small crew or a growing contractor, we find smart ways to lower acquisition costs and grow profit using the latest digital tools and a hands-on team.
             </div>
           </div>
-          <ButtonForm title='Book A Free Consultation' />
+          <ButtonForm title='Book Your Free Strategy Call' />
         </div>
         <div className="footer-contacts">
           <div className="footer-contacts-text">

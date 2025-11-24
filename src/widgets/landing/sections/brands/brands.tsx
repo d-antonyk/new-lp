@@ -45,7 +45,7 @@ export const Brands = () => {
 
   return (
     <div className="brands__wrapper">
-      <h3 className="brands-title">Our Clients</h3>
+      <h3 className="brands-title">Roofing Clients</h3>
       <div className="brands-slider">
         <div
           className="brands-track"
